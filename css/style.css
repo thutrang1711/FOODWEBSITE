@@ -31,7 +31,7 @@ header{
 header.sticky{
     background:rgba(250, 250, 250, 1);
 }
-+header:hover{
+header:hover{
     background:rgba(250, 250, 250, 1);
 }
 
