@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 90px;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+}
+
+.menu{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu > li{
+    padding: 0 12px;
+    position: relative;
+}
+.menu > li:hover .sub-menu{
+    visibility: visible;
+    top: 30px;
+}
+.sub-menu{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+}
+
+.sub-menu ul{
+    padding-left: 15px;
+}
+
+.sub-menu ul a{
+    font-weight: 800!important;
+    font-size: 15px!important;
+}
+
+.menu li a{
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    font-weight: 790!important;
+    font-size: 15px;
+    color: rgb(84, 76, 76);
+}
+.sub-about{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+}
+.sub-about ul{
+    padding-left: 15px;
+}
+.sub-about ul a{
+    font-weight: 800!important;
+    font-size: 15px!important;
+}
+.menu > li:hover .sub-about{
+    visibility: visible;
+    top: 30px;  
+}
+
+.others{
+    flex: 1;
+    display: flex;
+}
+
+.others > li{
+    padding: 0 11px;
+}
+.others > li a{
+    color: #000;
+   
+}
+
+.others > li:first-child{
+    position: relative;
+}
+
+.others > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(76, 69, 69);
+}
+
+.others > li:first-child i{
+    position: absolute;
+    right: 14px;
+}
