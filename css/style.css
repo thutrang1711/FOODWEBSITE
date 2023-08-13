@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -22,12 +21,34 @@ header{
     padding: 12px 50px;
     height: 90px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background:rgba(233, 223, 223, 0.8);
+}
+header.sticky{
+    background:rgba(250, 250, 250, 1);
+}
++header:hover{
+    background:rgba(250, 250, 250, 1);
 }
 
-.logo{
+.logo {
+    padding: 1px 10px;
+    height: 171px;
+    
+}
+.logo img{
+    width: 120px;
+    height: 130px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
     flex: 1;
 }
-
+ 
 .menu{
     flex: 3;
     display: flex;
@@ -41,7 +62,7 @@ header{
 }
 .menu > li:hover .sub-menu{
     visibility: visible;
-    top: 30px;
+    top: 55px;
 }
 .sub-menu{
     position: absolute;
@@ -49,8 +70,10 @@ header{
     border: 1px solid #ccc;
     padding: 10px 0 10px 20px;
     visibility: hidden;
-    top: 50px;
+    top: 60px;
     transition: 0.3s;
+    z-index: 1;
+    background: #fff;
 }
 
 .sub-menu ul{
@@ -76,8 +99,10 @@ header{
     border: 1px solid #ccc;
     padding: 10px 0 10px 20px;
     visibility: hidden;
-    top: 50px;
+    top: 60px;
     transition: 0.3s;
+    z-index: 1;
+    background: #fff;
 }
 .sub-about ul{
     padding-left: 15px;
@@ -89,6 +114,7 @@ header{
 .menu > li:hover .sub-about{
     visibility: visible;
     top: 30px;  
+    top: 55px;  
 }
 
 .others{
@@ -98,10 +124,26 @@ header{
 
 .others > li{
     padding: 0 11px;
+    position: relative;
 }
+.others > li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .others > li a{
     color: #000;
    
+}
+.others > li:last-child::after{
+    display: none;
 }
 
 .others > li:first-child{
@@ -112,24 +154,122 @@ header{
     width: 100%;
     border: none;
     border-bottom: 1px solid rgb(76, 69, 69);
+    background: transparent;
+    outline: none;
 }
 
 .others > li:first-child i{
     position: absolute;
     right: 14px;
 }
+#Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #333;
+    overflow: hidden;
+}
 
 .aspect-ratio-169 {
     display: block;
     position: relative;
     padding-top: 56.25%;
-  }
-  
-  .aspect-ratio-169 img{
+    transition: 0.3s;
+    
+}
+.aspect-ratio-169 img{
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+}
+.dot-container{
+    position: absolute;
+    height:  30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333 ;
+}
+/* .....................app................ */
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+
+}
+.app-google{
+    margin: 50px;
+
+}
+.app-google img{
+    height: 50px;
+    cursor: pointer;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}  
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+  /* .....................footer................ */
+  .footer{
+    text-align: center;
+  }
+  .footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+  }
+  .footer-top li{
+    padding: 0 12px;
+    position: relative;
+   
+  }
+  .footer-top li a{
+    text-decoration: none;
+    color: #000;
+  }
+  .footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #dddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer-top li:last-child::after{
+    display: none;
+  }
+  .footer-top li:last-child a{
+    margin-right: 12px;
+    color: #333;
   }
