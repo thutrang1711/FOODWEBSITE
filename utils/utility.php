@@ -19,5 +19,6 @@ function getGet($key) {
 	if(isset($_GET[$key])) {
 		$value = $_GET[$key];
 	}
+	return removeSpecialCharacter($value);
 
 }
