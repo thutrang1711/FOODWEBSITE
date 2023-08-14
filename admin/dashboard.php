@@ -124,6 +124,18 @@
         </div>
     </div>
 </body>
+<style>
+    .b-500 {
+        font-weight: 500;
+    }
 
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+</style>
 
 </html>
