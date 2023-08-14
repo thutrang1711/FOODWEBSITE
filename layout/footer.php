@@ -19,10 +19,7 @@
         <a href="">Xem facebook</a>
         <a href="https://www.facebook.com/profile.php?id=100010528535170">Blogs</a>
       </div>
-      <div class="col">
-        <a href="">Cách tạo website</a>
-        <a href="">Trở thành gánh nặng đáy xã hội</a>
-      </div>
+      
       <div class="col">
         <a href="">Trung tâm hỗ trợ</a>
         <a href="">Câu hỏi thường gặp</a>
