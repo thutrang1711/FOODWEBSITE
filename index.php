@@ -1,4 +1,3 @@
-@@ -0,0 +1,168 @@
 <?php require "layout/header.php"; ?>
 <?php
 require_once('database/config.php');
@@ -83,7 +82,7 @@ require_once('database/dbhelper.php');
 
             <section class="restaurants">
                 <div class="title">
-                    <h1>Thực đơn tại quán <span class="green">Holy Coffee</span></h1>
+                    <h1>Thực đơn tại quán <span class="green">TNS FOOD</span></h1>
                 </div>
                 <div class="product-restaurants">
                     <div class="row">
