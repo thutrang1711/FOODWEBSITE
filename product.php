@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <?php
 require_once('database/config.php');
@@ -14,7 +13,7 @@ require_once('database/dbhelper.php');
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-    <title>Asm-Nguyễn Đăng Thành-PS18241</title>
+    <title>TNS FOOD</title>
 </head>
 
 <body>
@@ -123,7 +122,7 @@ require_once('database/dbhelper.php');
                     <!-- end comment -->
                     <section class="restaurants">
                         <div class="title">
-                            <h1>Thực đơn tại quán <span class="green">Thành Coffee</span></h1>
+                            <h1>Thực đơn tại quán <span class="green">TNS FOOD</span></h1>
                         </div>
                         <div class="product-restaurants">
                             <div class="row">

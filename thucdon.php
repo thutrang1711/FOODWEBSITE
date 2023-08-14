@@ -1,4 +1,3 @@
-
 <?php require('layout/header.php') ?>
 <main>
     <div class="container">
@@ -117,5 +116,5 @@
         section.main section.recently .title h1 {
             border-bottom: 1px solid rgb(35, 54, 30);
         }
-    </style>
+    </style> 
     <?php require('layout/footer.php') ?>
