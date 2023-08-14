@@ -50,8 +50,7 @@ require_once('../database/dbhelper.php');
                         <td>Giá</td>
                         <td>Số lượng</td>
                         <td>Nội dung</td>
-                        <td>ID</td>
-                        <td width="50px"></td>
+                        <td width="100px">Danh mục</td>
                         <td width="50px"></td>
                     </tr>
                 </thead>
