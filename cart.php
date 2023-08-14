@@ -138,7 +138,9 @@ require_once('utils/utility.php');
         font-weight: bold;
     }
 
-
+    .red {
+        color: rgba(207, 16, 16, 0.815);
+    }
 </style>
 
 </html>
