@@ -135,44 +135,6 @@ require_once('../database/dbhelper.php');
                         window.location = "changePass.php";
                      </script>';
             }
-
-            // TRY có thể nó sẽ xảy ra ngoại lệ
-            try {
-                //Server settings
-                $mail->isSMTP(); // gửi mail SMTP
-                $mail->CharSet  = "utf-8";
-                $mail->Host = 'smtp.gmail.com';  // khai báo SMTP servers
-                $mail->SMTPAuth = true; // Enable authentication
-                $nguoigui = 'hellook332@gmail.com'; // Tài khoản Email
-                $matkhau = 'thanh1010'; // Mật khẩu Email
-                $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
-                $mail->Port = 465;  // Port kết nối: khai báo 465 hoặc 587                
-
-
-                // Recipients - Người nhận
-                $tennguoigui = 'Nguyễn Đăng Thành'; // Tên người gửi lấy từ form nhập
-                $mail->Username = $nguoigui; // SMTP username
-                $mail->Password = $matkhau;   // SMTP password
-                $mail->setFrom($nguoigui, $tennguoigui); //mail và tên người nhận 
-                $to = $email; // Email cần gửi đến lấy từ form nhập
-                $to_name = "Nguyễn Đăng Thành"; // Tên người cần gửi đến
-
-                // Content 
-                $mail->addAddress($to, $to_name); //mail và tên người nhận  
-                $mail->isHTML(true);  // Khai báo nội dung email hiển thị định dạng html
-                $mail->Subject = 'Khôi phục mật khẩu'; // Tiêu đề email
-                $mail->Body = $message; // Nội dung email
-
-                $mail->send(); // Tiến hành gửi thư
-                echo '<script language="javascript">
-                        alert("Mật khẩu của bạn đã được gửi đến Email !");
-                        window.location = "login.php";
-                     </script>';
-            }
-            // nếu ở trên lỗi thì CATCH sẽ chạy
-            catch (Exception $e) {
-                echo 'Mail không gửi được. Lỗi: ', $mail->ErrorInfo;
-            }
         }
         ?>
     </div>
