@@ -109,7 +109,7 @@ if (count($idList) > 0) {
                                             <td width="50px">STT</td>
                                             <td>Tên Sản Phẩm</td>
                                             <td>Số lượng</td>
-                                            <td>Tổng tieenf</td>
+                                            <td>Tổng tiền</td>
                                         </tr>
                                     </thead>
                                     <tbody>
