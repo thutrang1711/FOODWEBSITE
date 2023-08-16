@@ -162,7 +162,7 @@ if (isset($_GET['id'])) {
             <a class="nav-link" href="../product/">Quản lý sản phẩm</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Quản lý giỏ hàng</a>
+            <a class="nav-link" href="#">Quản lý đơn hàng</a>
         </li>
     </ul>
     <div class="container">
