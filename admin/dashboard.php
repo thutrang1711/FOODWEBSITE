@@ -31,13 +31,13 @@
             <a class="nav-link" href="product/">Quản lý sản phẩm</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link active" href="dashboard.php">Quản lý giỏ hàng</a>
+            <a class="nav-link active" href="dashboard.php">Quản lý đơn hàng</a>
         </li>
     </ul>
     <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h2 class="text-center">Quản lý giỏ hàng</h2>
+                <h2 class="text-center">Quản lý đơn hàng</h2>
             </div>
             <div class="panel-body">
                 <form action="" method="POST">
