@@ -53,16 +53,6 @@
                             ?>
                             <p><a href="product/">xem chi tiết ➜</a></p>
                         </div>
-                        <div class="sp kh">
-                            <p>Khách hàng</p>
-                            <?php
-                            $sql = "SELECT * FROM `user`";
-                            $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
-                            $result = mysqli_query($conn, $sql);
-                            echo '<span>' . mysqli_num_rows($result) . '</span>';
-                            ?>
-                            
-                        </div>
                         <div class="sp dm">
                             <p>Danh mục</p>
                             <?php
@@ -82,6 +72,16 @@
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
                             <p><a href="dashboard.php">xem chi tiết ➜</a></p>
+                        </div>
+                        <div class="sp kh">
+                            <p>Khách hàng</p>
+                            <?php
+                            $sql = "SELECT * FROM `user`";
+                            $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+                            $result = mysqli_query($conn, $sql);
+                            echo '<span>' . mysqli_num_rows($result) . '</span>';
+                            ?>
+                            
                         </div>
                     </div>
                 </section>
